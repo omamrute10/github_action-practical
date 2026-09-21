@@ -1,13 +1,13 @@
 name: CI
 on:
   push:
-    branches: { "main" }
+    branches: [ "main" ]
   pull_request:
-    branches: { "main" }
+    branches: [ "main" ]
   workflow_dispatch:
 jobs:
   build11:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: action/checkout@v4
       - name: run in one line script
