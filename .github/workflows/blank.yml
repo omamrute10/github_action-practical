@@ -1,0 +1,17 @@
+name: CI
+on:
+  push:
+    branches: { "main" }
+    pull_request: { "main" }
+    workflow_dispatch:
+jobs:
+  build11:
+    runs_on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v4
+      - name: run in one line script
+        run: echo "hello world!"
+      - name:
+        run:
+          echo add other action,
+          echo test, and deoloy
